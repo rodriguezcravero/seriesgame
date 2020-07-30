@@ -28,4 +28,12 @@
     color: whitesmoke;
     font-weight: bolder;
   }
+
+  .jumbotron h1 {
+    font-size: 1.8em;
+  }
+
+  .jumbotron p {
+    font-size: 1em;
+  }
 }
