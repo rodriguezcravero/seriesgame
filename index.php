@@ -28,6 +28,12 @@ function getUniqueVisitorCount($ip)
 $ip = $_SERVER['REMOTE_ADDR'];
 getUniqueVisitorCount($ip);
 
+$conteo = $_SESSION['visitor_count'];
+
+$archivo = 'contador.txt';
+
+file_put_contents($archivo, $conteo);
+
 include_once("inicio.html");
 
 ?>
