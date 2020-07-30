@@ -28,22 +28,6 @@ function getUniqueVisitorCount($ip)
 $ip = $_SERVER['REMOTE_ADDR'];
 getUniqueVisitorCount($ip);
 
-<script type='text/javascript'>
-
-function test()
-
-{
-
-console.log("visita Nº");
-console.log("<?php echo $_SESSION['visitor_count']; ?>");
-
-}
-
-test();// to call the function
-
-</script>
-
-
 include_once("inicio.html");
 
 ?>
