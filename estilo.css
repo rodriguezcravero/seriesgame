@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxanium&display=swap");
+
+.body {
+  margin: 0;
+  padding: 0;
+}
+
+.contenedorPrincipal {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/pop.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background: rgb(20, 45, 101);
+  background: linear-gradient(
+    0deg,
+    rgba(20, 45, 101, 1) 0%,
+    rgba(14, 22, 48, 1) 100%
+  ); */
+}
+
+.titulo {
+  height: 10%;
+  /* background-color: rgb(35, 34, 109); */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Oxanium", cursive;
+}
+
+.titulo h2 {
+  font-size: 2.5em;
+}
+
+.contenedor {
+  width: 75%;
+  margin: auto;
+  /* background-color: rgb(255, 255, 255); */
+  height: 90%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 3fr 2fr;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+}
+
+.tiempo {
+  grid-area: 1 / 1 / 2 / 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Oxanium", cursive;
+}
+
+.reloj {
+  width: 80px;
+  margin: 0;
+  padding: 0;
+}
+
+.tiempo .progress {
+  height: 5px;
+  width: 100%;
+}
+
+.ingreso {
+  grid-area: 3 / 1 / 4 / 4;
+}
+
+.imagen1 {
+  grid-area: 2 / 1 / 3 / 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.foto1 {
+  height: 80%;
+  width: 100%;
+  /* background-image: url("/1.jpg"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px 15px 15px 15px;
+  -moz-border-radius: 15px 15px 15px 15px;
+  -webkit-border-radius: 15px 15px 15px 15px;
+  border: 2px solid #000000;
+}
+
+.imagen2 {
+  grid-area: 2 / 1 / 3 / 2;
+  /* background-color: rgb(255, 255, 255); */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.foto2 {
+  height: 80%;
+  width: 100%;
+  /* background-image: url("/1.jpg"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px 15px 15px 15px;
+  -moz-border-radius: 15px 15px 15px 15px;
+  -webkit-border-radius: 15px 15px 15px 15px;
+  border: 2px solid #000000;
+}
+
+.imagen3 {
+  grid-area: 2 / 1 / 3 / 2;
+  /* background-color: rgb(255, 255, 255); */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.foto3 {
+  height: 80%;
+  width: 100%;
+  /* background-image: url("/1.jpg"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px 15px 15px 15px;
+  -moz-border-radius: 15px 15px 15px 15px;
+  -webkit-border-radius: 15px 15px 15px 15px;
+  border: 2px solid #000000;
+}
+
+.imagen2 {
+  grid-area: 2 / 2 / 3 / 3;
+  /* background-color: rgb(255, 255, 255); */
+}
+
+.imagen3 {
+  grid-area: 2 / 3 / 3 / 4;
+  /* background-color: rgb(255, 255, 255); */
+}
+
+.mensaje {
+  height: 80px;
+  width: 50%;
+  visibility: hidden;
+}
+
+.mensajeRojo {
+  visibility: visible;
+  font-size: 1.5em;
+  font-family: "Oxanium", cursive;
+  color: rgb(211, 137, 137);
+}
+
+.mensajeVerde {
+  visibility: visible;
+  font-size: 1.5em;
+  font-family: "Oxanium", cursive;
+  color: rgb(137, 211, 141);
+}
+
+.ingreso {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tituloSerie {
+  width: 50%;
+}
+
+.pasar {
+  width: 50%;
+  background-color: rgb(255, 123, 0);
+  color: black;
+}
+
+@media screen and (max-width: 700px) {
+  .contenedor {
+    width: 95%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr repeat(3, 2fr) 1.5fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  .titulo h2 {
+    font-size: 1.5em;
+  }
+
+  .foto1,
+  .foto2,
+  .foto3 {
+    height: 95%;
+    width: 70%;
+  }
+
+  .tiempo {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .imagen1 {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .imagen2 {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+  .imagen3 {
+    grid-area: 4 / 1 / 5 / 2;
+  }
+  .ingreso {
+    grid-area: 5 / 1 / 6 / 2;
+  }
+
+  .tituloSerie,
+  .pasar {
+    width: 75%;
+  }
+
+  .mensaje {
+    height: 70px;
+  }
+
+  .pasar {
+    margin-bottom: 10px;
+  }
+}

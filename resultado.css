@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxanium&display=swap");
+
+html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.contenedorResultado {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/pop.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Oxanium", cursive;
+}
+
+.titulo h2 {
+  font-size: 2.5em;
+  color: white;
+  padding-top: 0.4em;
+}
+
+.resultados {
+  width: 50%;
+  margin: auto;
+  font-family: "Oxanium", cursive;
+}
+
+.acierto {
+  background-color: rgb(91, 121, 61);
+}
+
+.desacierto {
+  background-color: rgb(92, 14, 14);
+}
+
+.icono {
+  font-size: 1.5em;
+}
+
+@media screen and (max-width: 700px) {
+  .titulo h2 {
+    font-size: 1.5em;
+    padding-top: 1em;
+  }
+  .resultados {
+    width: 95%;
+    margin: auto;
+  }
+}

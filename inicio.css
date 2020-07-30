@@ -1,0 +1,31 @@
+.contenedorPrincipal {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/pop.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.jumbotron {
+  background-color: rgba(240, 248, 255, 0.308);
+  width: 50%;
+  color: whitesmoke;
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 700px) {
+  .contenedorPrincipal {
+    min-height: 100vh;
+  }
+  .jumbotron {
+    background-color: rgba(240, 248, 255, 0.308);
+    width: 95%;
+    color: whitesmoke;
+    font-weight: bolder;
+  }
+}
